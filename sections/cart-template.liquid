@@ -136,7 +136,7 @@
               <textarea name="note" id="CartSpecialInstructions" class="cart-note__input">{{ cart.note }}</textarea>
             </div>
           {% endif %}
-          <div class="grid__item text-right small--text-center{% if section.settings.cart_notes_enable %} medium-up--one-half{% endif %}">
+          <div class="grid__item text-right small--text-center{% if section.settings.cart_notes_enable and emptybundle == true %} medium-up--one-half{% endif %}">
             <div>
               <span class="cart__subtotal-title">{{ 'cart.general.subtotal' | t }}</span>
               <span class="cart__subtotal">{{ cart.total_price | money }}</span>
