@@ -1,0 +1,237 @@
+{
+  "current": {
+    "newsletter_form_action": "\/\/myshopify.us13.list-manage.com\/subscribe\/post?u=19eed076a509c8e4417970673&amp;id=03a67c8bf5",
+    "color_links": "#008bf8",
+    "color_text": "#3d4246",
+    "color_body_text": "#788188",
+    "color_sale_text": "#7796a8",
+    "color_borders": "#e8e9eb",
+    "color_button": "#981014",
+    "color_button_text": "#fff",
+    "color_small_button": "#fff",
+    "color_small_button_text": "#3d4246",
+    "color_text_field": "#fff",
+    "color_text_field_text": "#000",
+    "color_image_overlay_text": "#ffffff",
+    "color_image_overlay": "#3d4246",
+    "image_overlay_opacity": "0.25",
+    "color_body_bg": "#fff",
+    "color_footer_bg": "#e8e9eb",
+    "type_header_family": "Google_Work+Sans_600_sans",
+    "type_header_base_size": "26px",
+    "type_base_family": "Google_Work+Sans_400_sans",
+    "type_base_size": "16px",
+    "type_bold_product_titles": false,
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "https:\/\/twitter.com\/coconara",
+    "social_facebook_link": "https:\/\/facebook.com\/CocoNaraOnline",
+    "social_pinterest_link": "https:\/\/pinterest.com\/coconaraUSA",
+    "social_instagram_link": "http:\/\/instagram.com\/coconarausa",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "favicon": "shopify:\/\/shop_images\/logo_57.png",
+    "product_related_enable": true,
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#1990c6",
+    "checkout_error_color": "#ff6d6d",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/coconara-final.png",
+          "logo_max_width": "200",
+          "main_linklist": "main-menu",
+          "message": true,
+          "message_text": "FREE SHIPPING ON U.S. ORDERS $150+",
+          "message_link": "shopify:\/\/pages\/free-shipping",
+          "color_bg": "#981014",
+          "color_text": "#fff"
+        }
+      },
+      "featured-collections": {
+        "type": "collection",
+        "settings": {
+          "title": "Featured Products",
+          "collection": "featured-products",
+          "grid": "4",
+          "rows": "1",
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "footer_menu1_title": "Quick Links",
+          "footer_linklist": "footer",
+          "footer_linklist_two": "",
+          "footer_newsletter_enable": true,
+          "newsletter_form_action": "\/\/myshopify.us13.list-manage.com\/subscribe\/post?u=19eed076a509c8e4417970673&amp;id=03a67c8bf5",
+          "show_payment_icons": true
+        }
+      },
+      "1494312711133": {
+        "type": "custom-content",
+        "blocks": {
+          "1494312711133-0": {
+            "type": "text",
+            "settings": {
+              "title": "Welcome!",
+              "text": "<p>Welcome to Coco Nara Online, the best place on the web for Hookah wholesale and much more. At CocoNara, we are passionate about our direct to consumer <strong>hookah pipes, hookah flavors<\/strong>, and <strong>hookah accessories<\/strong> specifically tailored to meet your needs. We also offer B2B wholesale contracts that provide tremendous discounts for our clients. From <strong>hookah coals<\/strong> to pipes and hoses, we have every hookah accessory imaginable.<\/p>\r\n<p><\/p>\r\n<p>In addition to a variety of superior hookah hardware, we also host a virtually endless supply of <strong>hookah coals<\/strong> that come in several shapes and sizes including cube and rectangular flat. Additionally, we carry the Coco Nara, Coco Mazaya and Coco Brix brands to name a few.<\/p>\r\n<p><\/p>\r\n<p>If you are a wholesale distributor and are looking for a high quality brand to partner with, then choose us. Our products are set at the lowest price point possible and are perfect for up-in-coming business partnerships. No matter if you are looking for the best <strong>hookah flavors, pipes, or coals<\/strong> our <strong>Hookah Wholesale<\/strong> store is the perfect fit.<\/p>\r\n<p><\/p>\r\n<p>Alternatively, if you are an individual looking for exceptional <strong>hookah coals<\/strong> for an exceptional price, then choose us. Register with our site today for an additional <strong>20% off<\/strong> of your initial purchase, and join our mailing list to receive exclusive offers and special promo codes that aren&rsquo;t available elsewhere. Like our <strong>Facebook page<\/strong> to keep up with our latest promotions as well.<\/p>\r\n<p><\/p>\r\n<p>Whether you are a wholesale distributor and would like to sign up for a wholesale account with us or are looking for high-end <strong>Hookah wholesale<\/strong> products, we guarantee an amazing experience when you shop with us.<\/p>",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          }
+        },
+        "block_order": [
+          "1494312711133-0"
+        ],
+        "settings": {
+          "title": "Shop Hookahs, Hookah Charcoal, Shisha Tobacco & Accessories Online"
+        }
+      },
+      "1494313250877": {
+        "type": "collection",
+        "settings": {
+          "title": "New Products",
+          "collection": "new-products",
+          "grid": "4",
+          "rows": "1",
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "1494386860976": {
+        "type": "featured-blog",
+        "settings": {
+          "title": "Recent Blogs",
+          "blog": "news",
+          "post_limit": "3",
+          "blog_show_author": false,
+          "blog_show_date": true,
+          "show_view_all": true
+        }
+      },
+      "1494487712256": {
+        "type": "slideshow",
+        "blocks": {
+          "1494487712256-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Banner_Web_07_New_Res.jpg",
+              "alignment": "top",
+              "title": "",
+              "subheading": "",
+              "link": "shopify:\/\/collections\/nu-hookah-tobacco-250g"
+            }
+          },
+          "1495871012845": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Banner_Web_06_New_Res.jpg",
+              "alignment": "top",
+              "title": "",
+              "subheading": "",
+              "link": "shopify:\/\/collections\/coconara-quicklight"
+            }
+          }
+        },
+        "block_order": [
+          "1494487712256-0",
+          "1495871012845"
+        ],
+        "settings": {
+          "autoplay": true,
+          "autoplay_speed": "3000",
+          "slideshow_height": "small",
+          "text_size": "medium"
+        }
+      }
+    },
+    "content_for_index": [
+      "1494487712256",
+      "featured-collections",
+      "1494313250877",
+      "1494312711133",
+      "1494386860976"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "color_text": "#3d4246",
+      "color_body_text": "#788188",
+      "color_sale_text": "#7796A8",
+      "color_borders": "#e8e9eb",
+      "color_button": "#7796A8",
+      "color_button_text": "#fff",
+      "color_small_button": "#fff",
+      "color_small_button_text": "#3d4246",
+      "color_text_field": "#fff",
+      "color_text_field_text": "#000",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3d4246",
+      "image_overlay_opacity": "0.25",
+      "color_body_bg": "#fff",
+      "type_header_family": "Google_Work+Sans_600_sans",
+      "type_header_base_size": "26px",
+      "type_base_family": "Google_Work+Sans_400_sans",
+      "type_base_size": "16px",
+      "type_bold_product_titles": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_linklist_two": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "feature-row"
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+---
+:api_key: 5c87150d44a3985aff15e2bd57de1d57
+:password: 90a3f2d89a8160e0294d4114b6a5ccea
+:store: coconaraonline.myshopify.com
+:theme_id: 
+:whitelist_files:
+- layout/
+- assets/
+- config/
+- snippets/
+- templates/
+- locales/
+- sections/

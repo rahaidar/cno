@@ -1,0 +1,26 @@
+
+{% unless collection_image_size %}
+  {%- assign collection_image_size = '340x340' -%}
+{% endunless %}
+{%- assign collection_image_scale = '2' -%}
+
+{% if collection.image and collection != empty %}
+  {% capture collection_image_url %}{{ collection | img_url: collection_image_size, scale: collection_image_scale, crop: 'top' }}{% endcapture %}
+{% elsif collection.products.first and collection.products.first.images != empty and collection != empty %}
+  {% capture collection_image_url %}{{ collection.products.first | img_url: collection_image_size, scale: collection_image_scale, crop: 'top' }}{% endcapture %}
+{% else %}
+  {% assign collection_image_url = blank %}
+{% endif %}
+
+<div class="grid-view-item">
+  <a class="grid-view-item__link" href="{% if collection == empty %}#{% else %}{{ collection.url }}{% endif %}">
+    {% if collection_image_url == blank %} {{ 'no-image.gif' | img_url: collection_image_size, scale: collection_image_scale, crop: 'top' | img_tag: collection.title, 'grid-view-item__image' }} {% else %} {{ collection_image_url | img_tag: collection.title, 'grid-view-item__image' }}{% endif %}
+    <div class="h4 grid-view-item__title text-center">
+      {% if collection.title == blank %}
+        {{ 'homepage.onboarding.collection_title' | t }}
+      {% else %}
+        {{ collection.title }}
+      {% endif %}
+    </div>
+  </a>
+</div>
