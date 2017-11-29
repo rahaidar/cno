@@ -171,7 +171,7 @@
             alert('Write the flavors for your tobacco pack purchase in the note section highlighted in red.');
             return false;
           }
-          jQuery('#CartSpecialInstructions').attr('name','checkout');
+          jQuery(":submit.btn.btn--small-wide").attr('name','checkout');
           return true;
         }
 
