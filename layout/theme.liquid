@@ -69,6 +69,8 @@
   {{ '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' | script_tag }}
   <!-- Shopify Ajax Api -->
   {{ 'api.jquery.me.js' | asset_url | script_tag }}
+  <!-- Jquery Initialize -->
+  {{ 'jquery.initialize.min.js' | asset_url | script_tag }}
 </head>
 
 <body class="template-{{ template | split: '.' | first }}">

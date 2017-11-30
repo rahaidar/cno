@@ -398,6 +398,16 @@
   </div>
 </div>
 
+<script>
+  $.initialize('div.bkt--dialog-content', function() {
+    //$(this).css('color', 'blue');
+    //console.log('div found');
+    // Hide Checkout Button in Beeketing popup
+    $('button.bkt--btn.bkt--btn-outline.bkt--btn-block.bkt--upsell-target-checkout').css('display','none');
+    //console.log('button hidden');
+  });
+</script>
+
 {% if settings.product_related_enable %}
   {% include 'related-products' %}
 {% endif %}
