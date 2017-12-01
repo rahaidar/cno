@@ -133,7 +133,7 @@
           {% if section.settings.cart_notes_enable and emptybundle == true %}
             <div class="grid__item medium-up--one-half cart-note">
               <label for="CartSpecialInstructions" class="cart-note__label small--text-center">{{ 'cart.general.note' | t }}</label>
-              <textarea name="note" id="CartSpecialInstructions" class="cart-note__input">{{ cart.note }}</textarea>
+              <textarea name="note" id="CartSpecialInstructions" class="cart-note__input">{% comment %}{{ cart.note }}{% endcomment %}</textarea>
             </div>
           {% endif %}
           <div class="grid__item text-right small--text-center{% if section.settings.cart_notes_enable and emptybundle == true %} medium-up--one-half{% endif %}">
