@@ -71,6 +71,7 @@
   {{ 'api.jquery.me.js' | asset_url | script_tag }}
   <!-- Jquery Initialize -->
   {{ 'jquery.initialize.min.js' | asset_url | script_tag }}
+
 </head>
 
 <body class="template-{{ template | split: '.' | first }}">
@@ -107,6 +108,84 @@
 
     {% section 'footer' %}
 
+  </div>
+
+  {% comment %} Age Verification Pop Up {% endcomment %}
+  <script>
+      function createCookie(name,value,hours) {
+          if (hours) {
+              var date = new Date();
+              date.setTime(date.getTime()+(hours*60*60*1000));
+              var expires = "; expires="+date.toGMTString();
+          }
+          else var expires = "";
+          document.cookie = name+"="+value+expires+"; path=/";
+      }
+
+      function readCookie(name) {
+          var nameEQ = name + "=";
+          var ca = document.cookie.split(';');
+          for(var i=0;i < ca.length;i++) {
+              var c = ca[i];
+              while (c.charAt(0)==' ') c = c.substring(1,c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+          }
+          return null;
+      }
+
+      function eraseCookie(name) {
+          createCookie(name,"",-1);
+      }
+
+
+      function ShowAgeVerification() {
+          $('#overlayAgeVerification').fadeIn(200);
+          var p = $('#PageContainer').offset();
+          //$('#dv_ageverification').css({ 'top': (p.top * 1 + 40) + "px", 'left': (p.left * 1 + 350) + "px" }).fadeIn(300);
+          $('#dv_ageverification').css({ 'top': (p.top * 1 + 40) + "px" }).fadeIn(300);
+      }
+
+      function Under18() {
+          window.location = "https://www.google.com";
+      }
+
+      function Over18() {
+          //var today = new Date();
+          //var expire = new Date();
+          //expire.setTime(today.getTime() + 3600000*24*365*10);
+          //expire.setTime(today.getTime() + (60*1000));
+          //document.cookie = "isAgeVerified=1;expires="+expire.toGMTString();
+          createCookie("isAgeVerified","1",1);
+          CloseAgeVerification();
+      }
+
+      function CloseAgeVerification() {
+        $('#dv_ageverification').fadeOut(200);
+        $('#overlayAgeVerification').fadeOut(300);
+      }
+
+      $(document).on('ready', function () {
+        var myAgeVerifiedCookie = readCookie("isAgeVerified");
+        //console.log('cookie value = ' + myAgeVerifiedCookie);
+        if (myAgeVerifiedCookie !== "1") {
+          ShowAgeVerification();
+        } else {
+          createCookie("isAgeVerified","1",1);
+        }
+      });
+  </script>
+
+  <!-- OverLay -->
+  <div id="overlayAgeVerification" style="display:none;"></div>
+
+  <!-- Show AgeVerification Layer -->
+  <div id="dv_ageverification" class="grid ageverification medium-up--one-half medium-up--push-one-quarter">
+    <div class="grid__item" style="padding-left:0px;">
+      Welcome to Coconara Online!<br /><br />
+      By clicking Enter you verify that you are 18 years of age or older, 21 years of age or older in California and Hawaii.<br /><br />
+      <input type='button' value='Enter' onclick="Over18()" class='btn' style="background-color: green;" />
+      <input type='button' value='Exit' onclick="Under18()" class='btn' style="margin-left: 20px;" />
+    </div>
   </div>
 </body>
 </html>
